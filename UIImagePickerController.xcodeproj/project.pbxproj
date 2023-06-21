@@ -103,8 +103,8 @@
 				0842B09D2A42D78900A70B78 /* SceneDelegate.swift */,
 				0842B09F2A42D78900A70B78 /* ViewController.swift */,
 				0842B0A12A42D78900A70B78 /* Main.storyboard */,
-				0842B0A42A42D78900A70B78 /* Assets.xcassets */,
 				0842B0A62A42D78900A70B78 /* LaunchScreen.storyboard */,
+				0842B0A42A42D78900A70B78 /* Assets.xcassets */,
 				0842B0A92A42D78900A70B78 /* Info.plist */,
 			);
 			path = UIImagePickerController;
