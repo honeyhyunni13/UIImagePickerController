@@ -6,6 +6,10 @@
 	<string>Photo Library 접근 권한을 요청합니다.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera 접근 권한을 요청합니다.</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>ko</string>
+	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 	<key>UIApplicationSceneManifest</key>
