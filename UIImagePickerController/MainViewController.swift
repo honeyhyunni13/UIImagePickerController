@@ -11,14 +11,24 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
+    var imagePicker: UIImagePickerController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = "UIImagePickerController Practice"
+        
+        // UIImagePickerController
+        imagePicker = UIImagePickerController()
+        imagePicker?.delegate = self
     }
     
+    // Camera
     @IBAction func callCamera(_ sender: Any) {
-        print("UIImagePickerController", "callCamera")
+        guard let imagePicker = imagePicker else { return }
+        
+        imagePicker.sourceType = .camera
+        self.present(imagePicker, animated: true)
     }
     
     @IBAction func callAlbum(_ sender: Any) {
