@@ -16,6 +16,7 @@
 		0842B0B32A42D78900A70B78 /* UIImagePickerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842B0B22A42D78900A70B78 /* UIImagePickerControllerTests.swift */; };
 		0842B0BD2A42D78900A70B78 /* UIImagePickerControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842B0BC2A42D78900A70B78 /* UIImagePickerControllerUITests.swift */; };
 		0842B0BF2A42D78900A70B78 /* UIImagePickerControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842B0BE2A42D78900A70B78 /* UIImagePickerControllerUITestsLaunchTests.swift */; };
+		08890A392A442D3F002C2E07 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08890A382A442D3F002C2E07 /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0842B0B82A42D78900A70B78 /* UIImagePickerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImagePickerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0842B0BC2A42D78900A70B78 /* UIImagePickerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerUITests.swift; sourceTree = "<group>"; };
 		0842B0BE2A42D78900A70B78 /* UIImagePickerControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08890A382A442D3F002C2E07 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0842B09A2A42D78900A70B78 /* UIImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
+				08890A372A442D1A002C2E07 /* Extension */,
 				0842B09B2A42D78900A70B78 /* AppDelegate.swift */,
 				0842B09D2A42D78900A70B78 /* SceneDelegate.swift */,
 				0842B09F2A42D78900A70B78 /* MainViewController.swift */,
@@ -125,6 +128,14 @@
 				0842B0BE2A42D78900A70B78 /* UIImagePickerControllerUITestsLaunchTests.swift */,
 			);
 			path = UIImagePickerControllerUITests;
+			sourceTree = "<group>";
+		};
+		08890A372A442D1A002C2E07 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08890A382A442D3F002C2E07 /* Camera.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08890A392A442D3F002C2E07 /* Camera.swift in Sources */,
 				0842B0A02A42D78900A70B78 /* MainViewController.swift in Sources */,
 				0842B09C2A42D78900A70B78 /* AppDelegate.swift in Sources */,
 				0842B09E2A42D78900A70B78 /* SceneDelegate.swift in Sources */,
