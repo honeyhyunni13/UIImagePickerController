@@ -1,6 +1,6 @@
 ## 📷 UIImagePickerController
 
->  학습 내용
+>  학습 문서
 
 <br/>
 
@@ -9,8 +9,6 @@
 ### 00. Title
 
 content
-
-<br/>
 
 
 
