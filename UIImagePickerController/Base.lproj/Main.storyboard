@@ -85,6 +85,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonAlbum" destination="abJ-UZ-Vxw" id="eI8-l9-IfC"/>
+                        <outlet property="buttonCamera" destination="aMr-TO-Vcp" id="VpD-uT-B3j"/>
+                        <outlet property="buttonUD" destination="abJ-UZ-Vxw" id="Orj-2E-P2Q"/>
+                        <outlet property="imageHandled" destination="hre-wN-mSe" id="19D-3B-ACM"/>
                         <outlet property="titleLabel" destination="J2h-Rb-FxA" id="h7d-Of-c3V"/>
                     </connections>
                 </viewController>

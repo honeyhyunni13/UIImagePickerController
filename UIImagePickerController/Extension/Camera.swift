@@ -14,6 +14,9 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
         _ picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
     ) {
+        guard let imageOriginal = info[.originalImage] as? UIImage else { return }
+        imageHandled.image = imageOriginal
+        
         picker.dismiss(animated: true)
     }
 }
