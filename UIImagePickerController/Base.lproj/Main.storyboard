@@ -85,12 +85,70 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonAlbum" destination="abJ-UZ-Vxw" id="eI8-l9-IfC"/>
+                        <outlet property="buttonCamera" destination="aMr-TO-Vcp" id="VpD-uT-B3j"/>
+                        <outlet property="buttonUD" destination="abJ-UZ-Vxw" id="Orj-2E-P2Q"/>
+                        <outlet property="imageHandled" destination="hre-wN-mSe" id="19D-3B-ACM"/>
                         <outlet property="titleLabel" destination="J2h-Rb-FxA" id="h7d-Of-c3V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+        <!--Cropping View Controller-->
+        <scene sceneID="bfv-Vc-DYw">
+            <objects>
+                <viewController storyboardIdentifier="CroppingViewController" id="Si0-59-7R4" customClass="CroppingViewController" customModule="UIImagePickerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jkg-zx-71A">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-e9-2kx">
+                                <rect key="frame" x="30" y="89" width="333" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hvl-aZ-grG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBG-eG-ORZ">
+                                <rect key="frame" x="30" y="743" width="333" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="x4C-xk-UHY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-EA-H9o">
+                                <rect key="frame" x="0.0" y="149" width="393" height="574"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mhi-2B-gaj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SFf-EA-H9o" firstAttribute="top" secondItem="HC0-e9-2kx" secondAttribute="bottom" constant="20" id="0Sx-CR-oc3"/>
+                            <constraint firstItem="Mhi-2B-gaj" firstAttribute="trailing" secondItem="HC0-e9-2kx" secondAttribute="trailing" constant="30" id="3FC-ks-MqQ"/>
+                            <constraint firstItem="lBG-eG-ORZ" firstAttribute="leading" secondItem="Mhi-2B-gaj" secondAttribute="leading" constant="30" id="6iY-cf-Bcl"/>
+                            <constraint firstItem="Mhi-2B-gaj" firstAttribute="trailing" secondItem="SFf-EA-H9o" secondAttribute="trailing" id="KqS-aZ-MfS"/>
+                            <constraint firstItem="HC0-e9-2kx" firstAttribute="top" secondItem="Mhi-2B-gaj" secondAttribute="top" constant="30" id="Ku6-3a-Dga"/>
+                            <constraint firstItem="lBG-eG-ORZ" firstAttribute="top" secondItem="SFf-EA-H9o" secondAttribute="bottom" constant="20" id="kgZ-4g-gY4"/>
+                            <constraint firstItem="SFf-EA-H9o" firstAttribute="leading" secondItem="Mhi-2B-gaj" secondAttribute="leading" id="ncv-he-gJX"/>
+                            <constraint firstItem="HC0-e9-2kx" firstAttribute="leading" secondItem="Mhi-2B-gaj" secondAttribute="leading" constant="30" id="oh9-H6-1ax"/>
+                            <constraint firstItem="Mhi-2B-gaj" firstAttribute="trailing" secondItem="lBG-eG-ORZ" secondAttribute="trailing" constant="30" id="ycl-Vi-dIY"/>
+                            <constraint firstItem="Mhi-2B-gaj" firstAttribute="bottom" secondItem="lBG-eG-ORZ" secondAttribute="bottom" constant="30" id="zgk-HT-m1q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCrop" destination="lBG-eG-ORZ" id="Mps-qV-VF3"/>
+                        <outlet property="imageHandled" destination="SFf-EA-H9o" id="AGj-SU-cbu"/>
+                        <outlet property="titleLabel" destination="HC0-e9-2kx" id="2Dl-Vf-QfV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vk-MA-qTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="4"/>
         </scene>
     </scenes>
     <resources>

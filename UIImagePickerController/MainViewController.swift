@@ -7,9 +7,14 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageHandled: UIImageView!
+    @IBOutlet weak var buttonCamera: UIButton!
+    @IBOutlet weak var buttonAlbum: UIButton!
+    @IBOutlet weak var buttonUD: UIButton!
     
     var imagePicker: UIImagePickerController?
     
@@ -17,10 +22,14 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         titleLabel.text = "UIImagePickerController Practice"
+        buttonCamera.setTitle("Camera", for: .normal)
+        buttonAlbum.setTitle("Album", for: .normal)
+        buttonUD.setTitle("UD", for: .normal)
         
         // UIImagePickerController
         imagePicker = UIImagePickerController()
         imagePicker?.delegate = self
+        imagePicker?.allowsEditing = true
     }
     
     // Camera
@@ -28,6 +37,7 @@ class MainViewController: UIViewController {
         guard let imagePicker = imagePicker else { return }
         
         imagePicker.sourceType = .camera
+        imagePicker.modalPresentationStyle = .overCurrentContext
         self.present(imagePicker, animated: true)
     }
     
