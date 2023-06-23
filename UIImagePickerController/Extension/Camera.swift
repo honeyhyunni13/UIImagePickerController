@@ -12,11 +12,12 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
     
     func imagePickerController(
         _ picker: UIImagePickerController,
-        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
+        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]
     ) {
-        guard let imageOriginal = info[.originalImage] as? UIImage else { return }
-        imageHandled.image = imageOriginal
+        guard let imageOriginal = info[.editedImage] as? UIImage else { return }
         
-        picker.dismiss(animated: true)
+        picker.dismiss(animated: true) {
+            self.imageHandled.image = imageOriginal
+        }
     }
 }

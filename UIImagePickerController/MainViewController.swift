@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -28,6 +29,7 @@ class MainViewController: UIViewController {
         // UIImagePickerController
         imagePicker = UIImagePickerController()
         imagePicker?.delegate = self
+        imagePicker?.allowsEditing = true
     }
     
     // Camera
@@ -35,6 +37,7 @@ class MainViewController: UIViewController {
         guard let imagePicker = imagePicker else { return }
         
         imagePicker.sourceType = .camera
+        imagePicker.modalPresentationStyle = .overCurrentContext
         self.present(imagePicker, animated: true)
     }
     
